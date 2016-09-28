@@ -1,0 +1,40 @@
+{
+  "name": "input-components",
+  "version": "1.0.0",
+  "description": "Example of AngularJS 1.5 input components that encapsulate html and input logic in reusable components.",
+  "main": "",
+  "scripts": {
+    "postinstall": "jspm install",
+    "start": "lite-server"
+  },
+  "author": {
+    "name": "Karl Shifflett",
+    "url": "http://oceanware.wordpress.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Oceanware/InputComponents.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Oceanware/InputComponents/issues"
+  },
+  "homepage": "https://github.com/oceanware/InputComponents",
+  "license": "MIT",
+  "devDependencies": {
+    "jspm": "^0.16.13",
+    "lite-server": "^2.2.2"
+  },
+  "jspm": {
+    "dependencies": {
+      "angular": "npm:angular@^1.5.8",
+      "lodash": "npm:lodash@^4.16.2",
+      "ngcomponentrouter": "npm:ngcomponentrouter@^2.1.0"
+    },
+    "devDependencies": {
+      "angular-mocks": "npm:angular-mocks@^1.5.8",
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}

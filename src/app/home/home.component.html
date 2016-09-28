@@ -1,0 +1,15 @@
+<form name="form" novalidate>
+	<input-text name="firstName" ng-model="vm.firstName" minimum-length="3" maximum-length="25"></input-text>
+	<input-text name="lastName" ng-model="vm.lastName" minimum-length="3" maximum-length="25"></input-text>
+	<input-email name="email" ng-model="vm.email" minimum-length="1" maximum-length="50"></input-email>
+	<input-url name="website" ng-model="vm.website" maximum-length="200"></input-url>
+	<input-password name="password" ng-model="vm.password" minimum-length="5" maximum-length="20"></input-password>
+	<input-password name="confirmPassword" match="vm.password" ng-model="vm.confirmPassword" minimum-length="5" maximum-length="20"></input-password>
+	<form-error-message ng-show="form.confirmPassword.$error.mismatch">Passwords do not match</form-error-message>
+	<div>
+		<button ng-click="vm.save(form)" ng-disabled="form.$invalid || form.$pending">Save - When Form Valid</button>
+	</div>
+	<div>
+		<button ng-click="vm.save(form)" ng-disabled="form.$pending">Save - Any State</button>
+	</div>
+</form>
